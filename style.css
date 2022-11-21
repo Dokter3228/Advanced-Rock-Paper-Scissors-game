@@ -73,6 +73,14 @@ main {
   cursor: pointer;
 }
 
+.circle:hover {
+  opacity: 80%;
+}
+
+.circle:active {
+  transform: scale(0.98);
+}
+
 .circle img {
   width: 65px;
 }
@@ -84,6 +92,7 @@ main {
 #rock {
   border: 25px solid #ce3756;
   grid-column: span 2;
+  position: relative;
 }
 
 #scissors {
@@ -100,5 +109,55 @@ main {
   color: white;
   margin-left: auto;
   margin-right: 150px;
+  cursor: pointer;
+}
+
+.rules:active {
+  transform: scale(0.98);
+}
+
+.rules:hover {
+  opacity: 80%;
+}
+
+.rules-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.rules-container.show {
+  display: flex;
+}
+
+.rules-block {
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#rule-pic {
+  grid-column: span 2;
+  margin: 0 auto;
+}
+
+.rules-block h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#close-svg {
+  padding-left: 100px;
   cursor: pointer;
 }
