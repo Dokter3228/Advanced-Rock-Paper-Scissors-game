@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to top,
+    #181e40,
+    #192345,
+    #1a2849,
+    #1c2e4e,
+    #1e3352
+  );
+}
+
+.information {
+  width: 700px;
+  height: 100px;
+  border-radius: 15px;
+  border: 3px solid #5a6980;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information .score-plate {
+  height: 100%;
+  width: 130px;
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.score-plate .score-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #727dc4;
+  margin-bottom: -10px;
+}
+
+.score-plate .score {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #545067;
+}
+
+main {
+  width: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  background-color: #e3e3e3;
+  border-radius: 50%;
+  border: 25px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle img {
+  width: 65px;
+}
+
+#paper {
+  border: 25px solid #5871f8;
+}
+
+#rock {
+  border: 25px solid #ce3756;
+  grid-column: span 2;
+}
+
+#scissors {
+  border: 25px solid #eba51f;
+}
+
+.rules {
+  width: 150px;
+  height: 40px;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-left: auto;
+  margin-right: 150px;
+  cursor: pointer;
+}
